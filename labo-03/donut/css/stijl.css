@@ -1,0 +1,58 @@
+/* stijl.css - labo 3, donut (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+  --oranje: #ff4500;
+  --geel: #f4b400;
+  --paars: #b39ddb;
+  --zwart: #000000;
+}
+
+/* === your rules === */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: serif;
+}
+
+/* Het oranje buitenste vierkant */
+main {
+  width: 20rem;
+  height: 20rem;
+  background-color: var(--oranje);
+  border: 0.5rem solid var(--zwart);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* De paarse cirkel */
+div {
+  width: 13rem;
+  height: 13rem;
+  background-color: var(--paars);
+  border: 0.4rem solid var(--zwart);
+  border-radius: 50%;
+  box-sizing: border-box;
+  overflow: hidden; /* Zorgt dat de gele h1 binnen de ronde cirkelvorm wordt afgesneden */
+}
+
+/* Het gele vierkant met de tekst */
+h1 {
+  width: 10rem;
+  height: 10rem;
+  margin: 0;
+  background-color: var(--geel);
+  border-right: 0.4rem solid var(--zwart);
+  border-bottom: 0.4rem solid var(--zwart);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+}

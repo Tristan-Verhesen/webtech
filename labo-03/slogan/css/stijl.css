@@ -1,0 +1,49 @@
+/* stijl.css - labo 3, slogan */
+
+/* === tokens === */
+:root {
+  --text: #282827;
+  --geel: #fccc00;
+}
+
+/* === your rules === */
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 8rem 2rem;
+  color: var(--text);
+}
+
+h2 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Het gele boogje onder het woord made */
+h2 span {
+  display: inline-block;
+  border-bottom: 0.6rem solid var(--geel);
+  border-radius: 50%;
+  padding-bottom: 0.2rem;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/* De knop */
+a {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  border-radius: 2rem;
+  color: white;
+  background-color: var(--text);
+  text-decoration: none;
+}
+
+/* Kleurverandering bij erover hoveren of selecteren */
+a:hover,
+a:focus {
+  background-color: #333333;
+}
